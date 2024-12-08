@@ -35,7 +35,9 @@ To get started with this project, follow these steps:
    ```bash
    cd s3_static_site_cors
 
-3) Begin terraform workflow:
+3. Edit ```1-auth.tf``` to include your region and an S3 backend. The bucket names are generated with random suffixes. 
+
+4. Begin terraform workflow:
     - ```terraform init```
     - ```terraform validate```
     - ```terraform plan```
