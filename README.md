@@ -1,4 +1,14 @@
-# S3 Static Site with Backend S3 Hosting Images
+# **S3 Static Site with CORS**
+
+_Terraform and AWS project used to provision two buckets that support each other with CORS._
+
+---
+
+## Table of Contents
+1. [Overview](#-overview)
+2. [Workflow](#-workflow)
+3. [Project Structure](#project-structure)
+
 
 ## Overview
 
@@ -24,7 +34,7 @@ To get started with this project, follow these steps:
 2. Move into the directory:
    ```bash
    cd s3_static_site_cors
-   
+
 3) Begin terraform workflow:
     - ```terraform init```
     - ```terraform validate```
