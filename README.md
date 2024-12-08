@@ -1,20 +1,35 @@
-# S3 Static Site with a backend S3 hosting images 
+# S3 Static Site with Backend S3 Hosting Images
 
 ## Overview
 
-Two S3 Buckets are provisioned and made public with bucket policies. The bucket named "frontend" is configured as a static website. The bucket named "host" is configured with cross-origin support (CORS). Terraform provisions both buckets, the objects needed in each, and the IAM policies. 
+This project provisions two S3 buckets with Terraform:
 
-The index.html page in "frontend" is written as a terraform template (.html.tmpl) and is dynamically rendered with the templatefile() function to reference the "host" bucket's images so that CORS support can be demostrated. 
+- **Frontend Bucket**: Configured as a static website.
+- **Host Bucket**: Configured to support Cross-Origin Resource Sharing (CORS) for serving images.
 
-The index.html file is rendered by terraform as an example of the templatefile() features in the project directory. The host object files and frontend website endpoint are outputed. 
+The **"frontend"** bucket contains a dynamically generated `index.html` page, which is rendered using the `templatefile()` function in Terraform. The page references images stored in the **"host"** bucket, demonstrating the CORS feature.
+
+This setup is an example of Terraform's `templatefile()` function, and it showcases how to use it to dynamically render an HTML file with references to S3 objects. 
+
+The Terraform script also outputs the host object URLs and the frontend website endpoint for easy access.
 
 ## Workflow
-1) git clone
-2) cd 
-3) terraform init
-4) terraform validate
-5) terraform plan
-6) terraform apply -auto-approve
+
+To get started with this project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/aaron-dm-mcdonald/s3_static_site_cors.git
+
+2. Move into the directory:
+   ```bash
+   cd s3_static_site_cors
+   
+3) Begin terraform workflow:
+    - ```terraform init```
+    - ```terraform validate```
+    - ```terraform plan```
+    - ```terraform apply -auto-approve```
 
 
 
