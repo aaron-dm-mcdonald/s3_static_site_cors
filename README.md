@@ -5,8 +5,8 @@ _Terraform and AWS project used to provision two buckets that support each other
 ---
 
 ## Table of Contents
-1. [Overview](#-overview)
-2. [Workflow](#-workflow)
+1. [Overview](#overview)
+2. [Workflow](#workflow)
 3. [Project Structure](#project-structure)
 
 
